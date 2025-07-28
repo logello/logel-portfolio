@@ -1,126 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Logel Sinday | Laravel Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #1f2937;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      font-size: 1rem;
-      color: #cbd5e0;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.5rem;
-      color: #1f2937;
-    }
-    .project {
-      background-color: #fff;
-      padding: 1rem;
-      margin-top: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      border-radius: 8px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.6rem 1rem;
-      background-color: #1f2937;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      padding: 2rem;
-      color: #6b7280;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="assets/gello.jpg" alt="Logel Sinday" style="width: 120px; border-radius: 50%; margin-bottom: 1rem;">
-    <h1>Logel C. Sinday</h1>
-    <p>Laravel Web Developer | 8 Years in IT | 4+ Years Laravel Experience</p>
-    <p>📍 Bayugan City, Philippines | ✉️ gello3132@gmail.com | 📞 +63-930-991-5545</p>
-    <a href="resume.pdf" download class="inline-block mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded text-white font-semibold transition">📄 Download Resume (PDF)</a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logel Sinday | Laravel Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-10 text-center shadow-md">
+      <img src="profile.jpg" alt="Logel Sinday" style="width: 120px; border-radius: 50%; margin-bottom: 1rem;">
+      <h1 class="text-3xl font-bold">Logel C. Sinday</h1>
+      <p class="mt-2">Laravel Web Developer | 8 Years in IT | 4+ Years Laravel Experience</p>
+      <p class="text-gray-300 mt-1">📍 Bayugan City, Philippines | ✉️ gello3132@gmail.com | 📞 +63-930-991-5545</p>
+      <a href="resume.pdf" download class="inline-block mt-4 px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded text-white font-semibold transition">📄 Download Resume (PDF)</a>
+    </header>
 
-  <main>
-    <section>
-      <h2>Summary</h2>
-      <p>Results-driven Laravel developer with over 4 years of hands-on experience in full-stack web development using Laravel and Vue.js. Adept in building scalable applications, REST APIs, and modern UI integrations. Seeking IT opportunities in Taiwan's tech industry.</p>
-    </section>
+    <!-- Main -->
+    <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+      <!-- Summary -->
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Summary</h2>
+        <p>Results-driven Laravel developer with over 4 years of hands-on experience in full-stack web development using Laravel and Vue.js. Adept in building scalable applications, REST APIs, and modern UI integrations. Seeking IT opportunities in Taiwan's tech industry.</p>
+      </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Department of Education Bayugan City IMS</h3>
-        <p>Laravel + Vue.js. Multi-role login, PDF reports, tracking logs. Integrated Chart.js, queues, and DataTables.</p>
-        <a href="https://sdobayugancity.com" class="btn">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Learning Resource Management System</h3>
-        <p>Laravel + Vue.js. Role-based access, API tracking, reporting tools, user-level permissions.</p>
-        <a href="https://lr.sdobayugancity.com" class="btn">View Project</a>
-      </div>
-      <div class="project">
-        <h3>Document Tracking System</h3>
-        <p>CRUD logs, search filters, queues, Chart.js data visualization, PDF export capabilities.</p>
-        <a href="https://dts.sdobayugancity.com" class="btn">View Project</a>
-      </div>
-    </section>
+      <!-- Projects -->
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Projects</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="bg-white p-5 rounded shadow">
+            <h3 class="text-xl font-semibold">Department of Education Bayugan City IMS</h3>
+            <p class="mt-2 text-sm">Laravel + Vue.js. Multi-role login, PDF reports, tracking logs. Integrated Chart.js, queues, and DataTables.</p>
+            <a href="https://sdobayugancity.com" class="text-blue-600 hover:underline text-sm mt-3 inline-block">View Project</a>
+          </div>
+          <div class="bg-white p-5 rounded shadow">
+            <h3 class="text-xl font-semibold">Learning Resource Management System</h3>
+            <p class="mt-2 text-sm">Laravel + Vue.js. Role-based access, API tracking, reporting tools, user-level permissions.</p>
+            <a href="https://lr.sdobayugancity.com" class="text-blue-600 hover:underline text-sm mt-3 inline-block">View Project</a>
+          </div>
+          <div class="bg-white p-5 rounded shadow">
+            <h3 class="text-xl font-semibold">Document Tracking System</h3>
+            <p class="mt-2 text-sm">CRUD logs, search filters, queues, Chart.js data visualization, PDF export capabilities.</p>
+            <a href="https://dts.sdobayugancity.com" class="text-blue-600 hover:underline text-sm mt-3 inline-block">View Project</a>
+          </div>
+        </div>
+      </section>
 
-    <section>
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>Administrative Officer II / Programmer</strong> – DepEd Bayugan City (2020–Present)</li>
-        <li><strong>IT Records Staff / Programmer</strong> – DepEd Bayugan City (2019–2020)</li>
-        <li><strong>IT Staff</strong> – Medical Facility (2018)</li>
-        <li><strong>iTech Developer</strong> – Software Firm (2016–2017)</li>
-      </ul>
-    </section>
+      <!-- Work Experience -->
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Work Experience</h2>
+        <ul class="space-y-2 text-sm">
+          <li><strong>Administrative Officer II / Programmer</strong> – DepEd Bayugan City (2020–Present)</li>
+          <li><strong>IT Records Staff / Programmer</strong> – DepEd Bayugan City (2019–2020)</li>
+          <li><strong>IT Staff</strong> – Medical Facility (2018)</li>
+          <li><strong>iTech Developer</strong> – Software Firm (2016–2017)</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <p><strong>Bachelor of Science in Information Technology</strong><br>Caraga State University, Graduated 2016</p>
-    </section>
+      <!-- Education -->
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Education</h2>
+        <p class="text-sm"><strong>Bachelor of Science in Information Technology</strong><br>Caraga State University, Graduated 2016</p>
+      </section>
 
-    <section>
-      <h2>Contact & Availability</h2>
-      <p>Willing to relocate to Taiwan. Open to visa sponsorship or Taiwan Employment Gold Card. Fluent in English, native in Filipino.</p>
-    </section>
-  </main>
+      <!-- Contact & Availability -->
+      <section>
+        <h2 class="text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Contact & Availability</h2>
+        <p class="text-sm">Willing to relocate to Taiwan. Open to visa sponsorship or Taiwan Employment Gold Card. Fluent in English, native in Filipino.</p>
+      </section>
+    </main>
 
-  <footer>
-    &copy; 2025 Logel Sinday | Built for GitHub Portfolio | Deployed via GitHub Pages / Netlify
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-center text-gray-500 text-sm py-6">
+      &copy; 2025 Logel Sinday | Built for GitHub Portfolio | Deployed via GitHub Pages / Netlify
+    </footer>
+  </body>
 </html>
